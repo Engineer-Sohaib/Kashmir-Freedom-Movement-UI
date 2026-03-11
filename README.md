@@ -5,10 +5,10 @@
 
 A fully responsive, multi-page website built for the Kashmir Freedom Movement (KFM) — a civil resistance organisation working for the self-determination, unity, and freedom of the people of Jammu & Kashmir.
 
-🌐 Live Site: [kfmovement-ui.vercel.app](https://kfmovement-ui.vercel.app/index.html)
-🌐 Original Site: (https://kfmovement.com/)
+🌐 Live Site: [kfmovement-ui.vercel.app](https://kfmovement-ui.vercel.app)
+🌐 Original Site: [kfmovement.com](https://kfmovement.com/)
 
---- 
+---
 
 ## What This Project Is
 
@@ -23,16 +23,36 @@ The site covers everything from KFM's mission and leadership to the history of K
 | Page | Description |
 |------|-------------|
 | `index.html` | Homepage — hero, mission, team, Kashmir regions overview |
-| `about.html` | About the Kashmir Freedom Movement |
-| `maqbool.html` | Tribute to Maqbool Butt — Shaheed-e-Azam |
-| `history.html` | Kashmir's history since 1947 |
-| `languages.html` | Languages of the Kashmiri people |
-| `azad-kashmir.html` | Kashmir's four parts — Azad Kashmir, Gilgit-Baltistan, IOK, Aksai Chin |
-| `gallery.html` | Photo gallery |
-| `books.html` | Books and resources |
-| `membership.html` | Join the movement |
-| `donate.html` | Support the cause |
 | `contact.html` | Get in touch |
+| **About** | |
+| `about/about.html` | About the Kashmir Freedom Movement |
+| `about/leadership.html` | Leadership & Team |
+| `about/kfm-charter.html` | KFM Charter |
+| `about/maqbool.html` | Tribute to Maqbool Butt — Shaheed-e-Azam |
+| `about/history.html` | Kashmir's history since 1947 |
+| `about/languages.html` | Languages of the Kashmiri people |
+| `about/languages-of-kashmir.html` | Languages of Kashmir (detailed) |
+| **Kashmir Parts** | |
+| `kashmir-parts/azad-kashmir.html` | Azad Kashmir |
+| `kashmir-parts/gilgit-baltistan.html` | Gilgit-Baltistan |
+| `kashmir-parts/indian-occupied-kashmir.html` | Indian Occupied Kashmir |
+| `kashmir-parts/aksai-chin.html` | Aksai Chin |
+| `kashmir-parts/jammu-region.html` | Jammu Region |
+| `kashmir-parts/kashmir-map.html` | Kashmir Map |
+| **Take Action** | |
+| `take-action/campaigns.html` | Campaigns |
+| `take-action/events.html` | Events |
+| `take-action/volunteer.html` | Volunteer |
+| `take-action/membership.html` | Join the movement |
+| `take-action/donate.html` | Support the cause |
+| **Media** | |
+| `media/blogs.html` | Blogs |
+| `media/kfm-news.html` | KFM News |
+| `media/gallery.html` | Photo gallery |
+| `media/videos.html` | Videos |
+| `media/books.html` | Books and resources |
+| `media/press-media.html` | Press & Media |
+| `media/documents-reports.html` | Documents & Reports |
 
 ---
 
@@ -48,9 +68,6 @@ This project was built with plain, clean web technologies — no unnecessary fra
 ---
 
 ## Project Structure
-
-```
-Here's the updated structure for your README:
 
 ```
 Kashmir-Freedom-Movement-UI/
@@ -98,19 +115,20 @@ Kashmir-Freedom-Movement-UI/
 └── js/
     └── bundle.js
 ```
-```
 
 ---
 
 ## Deployment
 
-The site is deployed on Vercel with automatic deployments on every push to `main`.
+The site is deployed on Vercel with automatic deployments on every push to `master`.
 
 To deploy your own version:
 
 1. Fork this repository
 2. Go to [vercel.com](https://vercel.com) and import your fork
 3. Vercel will detect it as a static site and deploy it instantly — no configuration needed
+
+> The `vercel.json` at the root enables clean URLs so pages like `/about/about` resolve correctly without needing `.html` in the address bar.
 
 ---
 
@@ -152,9 +170,8 @@ Please keep the code clean and the design consistent with the existing style.
 Built with care by Sohaib — a developer who believes technology should serve real people and real causes.
 
 - GitHub: [@Engineer-Sohaib](https://github.com/Engineer-Sohaib)
-- Live Site: [kfmovement-ui.vercel.app](https://kfmovement-ui.vercel.app/index.html)
-- Portfolio Site: (https://sohaibishaque.netlify.app/)
-
+- Live Site: [kfmovement-ui.vercel.app](https://kfmovement-ui.vercel.app)
+- Portfolio: [sohaibishaque.netlify.app](https://sohaibishaque.netlify.app/)
 
 ---
 
@@ -164,4 +181,4 @@ This project is open source. You're free to use it, learn from it, and build on 
 
 ---
 
-Justice · Freedom · Self-Determination · Unity
+*Justice · Freedom · Self-Determination · Unity*
