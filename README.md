@@ -5,7 +5,7 @@
 
 A fully responsive, multi-page website built for the Kashmir Freedom Movement (KFM) — a civil resistance organisation working for the self-determination, unity, and freedom of the people of Jammu & Kashmir.
 
-🌐 Live Site: (kfmovement-ui.vercel.app](https://kashmir-freedom-movement-ui.vercel.app/)
+🌐 Live Site: [kfmovement-ui.vercel.app](https://kashmir-freedom-movement-ui.vercel.app/)
 🌐 Original Site: [kfmovement.com](https://kfmovement.com/)
 
 ---
