@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — KFM</title>
+    <link
+      rel="icon"
+      href="https://kfmovement.com/wp-content/uploads/2025/02/cropped-Rounded-32x32.png"
+      sizes="32x32" />
+    <link
+      rel="icon"
+      href="https://kfmovement.com/wp-content/uploads/2025/02/cropped-Rounded-192x192.png"
+      sizes="192x192" />
+    <link
+      rel="apple-touch-icon"
+      href="https://kfmovement.com/wp-content/uploads/2025/02/cropped-Rounded-180x180.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bundle.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <a href="index" class="nav-logo"><img src="https://kfmovement.com/wp-content/uploads/2026/03/logo-w.png" alt="KFM Logo"></a>
+
+      <div class="nav-pill">
+              <ul class="nav-links">
+          <li><a href="index">Home</a></li>
+
+          <li class="has-dropdown">
+            <a href="about/about">About <span class="nav-arrow"><i class="ri-arrow-down-s-line"></i></span></a>
+            <ul class="dropdown">
+              <li><a href="about/about">About KFM</a></li>
+              <li><a href="about/leadership">Leadership &amp; Team</a></li>
+              <li><a href="about/kfm-charter">KFM Charter</a></li>
+              <li><a href="about/maqbool">Maqbool Bhatt</a></li>
+              <li><a href="about/history">Kashmir History</a></li>
+              <li><a href="about/languages">Languages</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="kashmir-parts/azad-kashmir">Kashmir Parts <span class="nav-arrow"><i class="ri-arrow-down-s-line"></i></span></a>
+            <ul class="dropdown">
+              <li><a href="kashmir-parts/azad-kashmir">Azad Kashmir</a></li>
+              <li><a href="kashmir-parts/gilgit-baltistan">Gilgit Baltistan</a></li>
+              <li><a href="kashmir-parts/indian-occupied-kashmir">Indian Occupied Kashmir</a></li>
+              <li><a href="kashmir-parts/aksai-chin">Aksai Chin</a></li>
+              <li><a href="kashmir-parts/jammu-region">Jammu Region</a></li>
+              <li><a href="kashmir-parts/kashmir-map">Kashmir Map</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="take-action/campaigns">Take Action <span class="nav-arrow"><i class="ri-arrow-down-s-line"></i></span></a>
+            <ul class="dropdown">
+              <li><a href="take-action/campaigns">Campaigns</a></li>
+              <li><a href="take-action/events">Events</a></li>
+              <li><a href="take-action/volunteer">Volunteer</a></li>
+              <li><a href="take-action/membership">Membership</a></li>
+              <li><a href="take-action/donate">Donate</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="media/blogs">Media <span class="nav-arrow"><i class="ri-arrow-down-s-line"></i></span></a>
+            <ul class="dropdown">
+              <li><a href="media/blogs">Blogs</a></li>
+              <li><a href="media/kfm-news">KFM News</a></li>
+              <li><a href="media/gallery">Gallery</a></li>
+              <li><a href="media/videos">Videos</a></li>
+              <li><a href="media/books">Books</a></li>
+              <li><a href="media/press-media">Press &amp; Media</a></li>
+              <li><a href="media/documents-reports">Documents &amp; Reports</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact" class="active">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <a href="take-action/donate" class="nav-cta">
+        Donate
+        <span class="nav-cta-arrow">
+          <i class="ri-arrow-right-long-line"></i>
+        </span>
+      </a>
+    </nav>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-rings">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+
+      <svg
+        class="hero-mountains"
+        viewBox="0 0 1440 180"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0,180 L0,120 L90,85 L170,105 L270,50 L365,90 L460,35 L548,72 L635,15 L715,60 L808,8 L890,52 L985,14 L1075,58 L1165,22 L1265,65 L1355,38 L1440,70 L1440,180Z"
+          fill="rgba(11,26,13,0.85)" />
+        <path
+          d="M0,180 L0,152 L140,135 L300,148 L460,126 L610,145 L760,122 L900,138 L1040,125 L1180,140 L1320,128 L1440,142 L1440,180Z"
+          fill="rgba(5,14,6,.96)" />
+      </svg>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Kashmir Freedom Movement</p>
+        <h1 class="hero-title">
+          Get in
+          <span class="acc">Touch</span>
+        </h1>
+        <p class="hero-sub">
+          We believe in transparency and community engagement. Reach out with
+          your questions, suggestions, or to learn how you can support the
+          cause.
+        </p>
+      </div>
+      <div class="scroll-cue">Connect</div>
+    </section>
+
+    <div class="breadcrumb">
+      <a href="index">Home</a><span class="bc-sep">›</span>
+      <span class="cur">Contact Us</span>
+    </div>
+
+    <div class="info-band">
+      <a
+        href="https://maps.google.com/?q=Samahni+Bhimber+AJK"
+        target="_blank"
+        class="info-card sr">
+        <div class="info-card-icon"><i class="ri-map-pin-line"></i></div>
+        <div class="info-card-label">Location</div>
+        <div class="info-card-value">Samahni Chock, Bhimber</div>
+        <div class="info-card-sub">Azad Jammu &amp; Kashmir</div>
+        <div class="info-card-arrow">↗</div>
+      </a>
+      <a href="tel:+923558153397" class="info-card sr sr-d1">
+        <div class="info-card-icon"><i class="ri-phone-line"></i></div>
+        <div class="info-card-label">Phone</div>
+        <div class="info-card-value">+92 355 815 3397</div>
+        <div class="info-card-sub">Available for calls</div>
+        <div class="info-card-arrow">↗</div>
+      </a>
+      <a href="mailto:info@kfmovement.com" class="info-card sr sr-d2">
+        <div class="info-card-icon"><i class="ri-mail-line"></i></div>
+        <div class="info-card-label">Email</div>
+        <div class="info-card-value">info@kfmovement.com</div>
+        <div class="info-card-sub">We respond within 24 hours</div>
+        <div class="info-card-arrow">↗</div>
+      </a>
+      <div class="info-card sr sr-d3">
+        <div class="info-card-icon"><i class="ri-time-line"></i></div>
+        <div class="info-card-label">Work Hours</div>
+        <div class="info-card-value">08:00 AM – 07:00 PM</div>
+        <div class="info-card-sub">Every day of the week</div>
+      </div>
+    </div>
+    <section class="contact-section">
+      <div class="contact-inner">
+        <div class="contact-left sr">
+          <p class="s-label">Reach Out</p>
+          <h2 class="s-title">Questions or<br /><em>Suggestions?</em></h2>
+          <p class="contact-desc">
+            Whether you have a question about our mission, want to volunteer, or
+            are looking to support the Kashmir cause — we are here to listen.
+            Every message matters to us.
+          </p>
+
+          <div class="detail-list">
+            <a
+              href="https://wa.me/+923558153397"
+              target="_blank"
+              class="detail-row">
+              <div class="dr-icon"><i class="ri-chat-1-line"></i></div>
+              <div class="dr-body">
+                <div class="dr-label">WhatsApp</div>
+                <div class="dr-val">+92 355 815 3397</div>
+              </div>
+              <div class="dr-chevron">›</div>
+            </a>
+            <a href="tel:+923558153397" class="detail-row">
+              <div class="dr-icon"><i class="ri-phone-line"></i></div>
+              <div class="dr-body">
+                <div class="dr-label">Call Us</div>
+                <div class="dr-val">+92 355 815 3397</div>
+              </div>
+              <div class="dr-chevron">›</div>
+            </a>
+            <a href="mailto:info@kfmovement.com" class="detail-row">
+              <div class="dr-icon"><i class="ri-mail-line"></i></div>
+              <div class="dr-body">
+                <div class="dr-label">Email</div>
+                <div class="dr-val">info@kfmovement.com</div>
+              </div>
+              <div class="dr-chevron">›</div>
+            </a>
+            <div class="detail-row">
+              <div class="dr-icon"><i class="ri-map-pin-line"></i></div>
+              <div class="dr-body">
+                <div class="dr-label">Address</div>
+                <div class="dr-val">Samahni Chock Bhimber, AJK</div>
+              </div>
+              <div class="dr-chevron pg-contact-1">›</div>
+            </div>
+            <div class="detail-row">
+              <div class="dr-icon"><i class="ri-time-line"></i></div>
+              <div class="dr-body">
+                <div class="dr-label">Work Hours</div>
+                <div class="dr-val">Everyday — 08:00 AM to 07:00 PM</div>
+              </div>
+              <div class="dr-chevron pg-contact-2">›</div>
+            </div>
+          </div>
+
+          <div class="map-frame">
+            <div class="map-frame-inner">
+              <div class="map-road-h pg-contact-3"></div>
+              <div class="map-road-h pg-contact-4"></div>
+              <div class="map-road-h pg-contact-5"></div>
+              <div class="map-road-v pg-contact-6"></div>
+              <div class="map-road-v pg-contact-7"></div>
+              <div class="map-road-v pg-contact-8"></div>
+              <div class="map-pin">
+                <div class="map-pin-dot"></div>
+                <div class="map-pin-label">KFM · Bhimber, AJK</div>
+              </div>
+            </div>
+            <div class="map-frame-label">
+              Samahni Chock, Bhimber · Azad Jammu &amp; Kashmir
+            </div>
+          </div>
+          <div class="map-frame">
+            <div
+              id="kfm-map" class="pg-contact-9"></div>
+            <div class="map-frame-label">
+              Samahni Chock, Bhimber · Azad Jammu &amp; Kashmir
+            </div>
+          </div>
+
+          <p class="pg-contact-10">
+            Follow Us
+          </p>
+          <div class="social-row">
+            <a
+              href="https://www.facebook.com/KFMovement"
+              target="_blank"
+              class="social-btn"
+              title="Facebook"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="https://twitter.com/kfmovement" class="social-btn" title="Twitter"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+            <a href="https://youtube.com/@kfmovement" class="social-btn" title="YouTube"
+              ><i class="ri-youtube-line"></i
+            ></a>
+            <a href="https://instagram.com/kfmovement" class="social-btn" title="Instagram"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="https://wa.me/+923558153397"
+              target="_blank"
+              class="social-btn"
+              title="WhatsApp"
+              ><i class="ri-whatsapp-line"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="contact-right sr sr-d2">
+          <div class="form-header">
+            <p class="s-label">Send a Message</p>
+            <h2 class="s-title pg-contact-11">
+              Fill the Form<br /><em>Below</em>
+            </h2>
+          </div>
+
+          <div id="contactFormWrap">
+            <span class="subject-pill-label">Subject</span>
+            <div class="subject-pills">
+              <button class="subject-pill active" type="button">
+                General Inquiry
+              </button>
+              <button class="subject-pill" type="button">Membership</button>
+              <button class="subject-pill" type="button">Volunteer</button>
+              <button class="subject-pill" type="button">Donation</button>
+              <button class="subject-pill" type="button">Media</button>
+              <button class="subject-pill" type="button">Other</button>
+            </div>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Your first name"
+                    autocomplete="given-name" />
+                </div>
+                <div class="field">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Your last name"
+                    autocomplete="family-name" />
+                </div>
+              </div>
+              <div class="form-row full">
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    autocomplete="email" />
+                </div>
+              </div>
+              <div class="form-row full">
+                <div class="field">
+                  <label for="phone"
+                    >Phone Number
+                    <span class="pg-contact-12">(optional)</span></label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+92 ..."
+                    autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-row full">
+                <div class="field">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here…"></textarea>
+                </div>
+              </div>
+              <div class="form-submit">
+                <p class="submit-note">
+                  We respond within <strong>24 hours</strong> on working days.
+                </p>
+                <button type="submit" class="btn-submit">
+                  Send Message
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M1 7h12M8 2l5 5-5 5"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <div class="success-title">Message Sent!</div>
+            <p class="success-sub">
+              Thank you for reaching out. We'll get back to you within 24 hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-inner">
+        <div class="faq-left sr">
+          <p class="s-label">FAQ</p>
+          <h2 class="s-title">Common<br /><em>Queries</em></h2>
+          <p>
+            At KFM, we believe in transparency and community engagement. Below
+            are answers to frequently asked questions about our mission and how
+            you can get involved.
+          </p>
+          <div class="faq-badge">
+            <span class="dot"></span>5 Questions Answered
+          </div>
+        </div>
+
+        <div class="faq-list sr sr-d1">
+          <div class="faq-item">
+            <button class="faq-q open" type="button">
+              <span class="faq-q-text">What is KF Movement?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a open">
+              <div class="faq-a-inner">
+                KF Movement is a
+                <strong>community-driven initiative</strong> dedicated to
+                empowering individuals, advocating for positive change, and
+                fostering growth through education, activism, and social impact
+                projects — with a focus on the self-determination of the
+                Kashmiri people.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              <span class="faq-q-text"
+                >How can I get involved with KF Movement?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                You can join KFM by <strong>volunteering</strong>, participating
+                in events, supporting campaigns, or donating to help further our
+                mission. Fill out the contact form above or visit our Membership
+                page for more details on how to take action.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              <span class="faq-q-text"
+                >What causes does KF Movement support?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                We focus on various social causes including
+                <strong
+                  >education, community development, social justice, mental
+                  health awareness, and humanitarian aid</strong
+                >. At the core of our work is the cause of Kashmir's
+                self-determination in line with UN resolutions.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              <span class="faq-q-text"
+                >Can I donate to support KF Movement?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                <strong>Yes!</strong> Donations help us fund initiatives,
+                provide resources, and expand our reach. Visit our website's
+                donation page to contribute securely. Every contribution — no
+                matter the size — makes a meaningful difference.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              <span class="faq-q-text"
+                >How can I stay updated on KFM's initiatives?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Follow us on
+                <strong>Facebook, Twitter, YouTube, and Instagram</strong>,
+                subscribe to our newsletter, or regularly check our website to
+                stay informed about upcoming events, campaigns, and impact
+                stories from across Kashmir.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cta-band sr">
+      <div>
+        <h3>Ready to <em>Take Action?</em></h3>
+        <p>
+          Join the Kashmir Freedom Movement — through membership, volunteering,
+          or donation. Every act of solidarity counts toward a just future.
+        </p>
+      </div>
+      <div class="cta-btns">
+        <a href="take-action/membership" class="btn-primary">Join KFM</a>
+        <a href="take-action/donate" class="btn-ghost">Donate Now</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+           <a href="index" class="f-logo"
+            ><img
+              src="https://kfmovement.com/wp-content/uploads/2026/03/logo-w.png"
+              alt="KFM Logo"
+          /></a>
+          <p>
+            The Kashmir Freedom Movement is working for the integration,
+            mobilization, and empowerment of the people of Jammu and Kashmir
+            towards the self-determination cause.
+          </p>
+        </div>
+                <div class="f-col"><h4>About</h4><ul>
+          <li><a href="about/about">About KFM</a></li>
+          <li><a href="about/leadership">Leadership &amp; Team</a></li>
+          <li><a href="about/kfm-charter">KFM Charter</a></li>
+          <li><a href="about/maqbool">Maqbool Butt</a></li>
+          <li><a href="about/history">Kashmir History</a></li>
+        </ul></div>
+        <div class="f-col"><h4>Kashmir Parts</h4><ul>
+          <li><a href="kashmir-parts/azad-kashmir">Azad Kashmir</a></li>
+          <li><a href="kashmir-parts/gilgit-baltistan">Gilgit Baltistan</a></li>
+          <li><a href="kashmir-parts/indian-occupied-kashmir">Indian Occupied Kashmir</a></li>
+          <li><a href="kashmir-parts/aksai-chin">Aksai Chin</a></li>
+          <li><a href="kashmir-parts/jammu-region">Jammu Region</a></li>
+          <li><a href="kashmir-parts/kashmir-map">Kashmir Map</a></li>
+        </ul></div>
+        <div class="f-col"><h4>Take Action</h4><ul>
+          <li><a href="take-action/campaigns">Campaigns</a></li>
+          <li><a href="take-action/events">Events</a></li>
+          <li><a href="take-action/volunteer">Volunteer</a></li>
+          <li><a href="take-action/membership">Membership</a></li>
+          <li><a href="take-action/donate">Donate</a></li>
+        </ul></div>
+<div class="f-col f-newsletter">
+          <h4>Newsletter</h4>
+          <p class="newsletter-desc">
+            Stay updated on the Kashmir cause. No spam, ever.
+          </p>
+          <form class="newsletter-form" onsubmit="return kfmNewsletter(this);">
+            <div class="newsletter-field">
+              <input
+                type="email"
+                placeholder="Your email address"
+                required
+                aria-label="Email address" />
+              <button type="submit" aria-label="Subscribe">
+                <i class="ri-send-plane-fill"></i>
+              </button>
+            </div>
+            <p class="newsletter-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &#169; Copyright 2026 &mdash; KFM &middot; Kashmir Freedom Movement
+          &middot; All Rights Reserved.
+        </p>
+        <p class="pg-contact-13">
+          Justice &middot; Freedom &middot; Self-Determination
+        </p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      (function () {
+        function initMap() {
+          var mapEl = document.getElementById("kfm-map");
+          if (!mapEl || mapEl._leaflet_id) return;
+
+          // Bhimber, AJK coordinates
+          var lat = 32.9741,
+            lng = 73.9566;
+
+          var map = L.map("kfm-map", {
+            center: [lat, lng],
+            zoom: 14,
+            zoomControl: true,
+            scrollWheelZoom: false,
+            attributionControl: true,
+          });
+
+          // Dark-toned tile layer that matches the site aesthetic
+          L.tileLayer(
+            "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+            {
+              attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+              subdomains: "abcd",
+              maxZoom: 19,
+            },
+          ).addTo(map);
+
+          // Custom pin icon matching site green accent
+          var pinIcon = L.divIcon({
+            className: "",
+            html: '<div style="width:14px;height:14px;background:#4caf72;border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 4px rgba(76,175,114,0.3);"></div>',
+            iconSize: [14, 14],
+            iconAnchor: [7, 7],
+            popupAnchor: [0, -14],
+          });
+
+          var marker = L.marker([lat, lng], { icon: pinIcon }).addTo(map);
+          marker
+            .bindPopup(
+              "<strong style=\"font-family:'Josefin Sans',sans-serif;color:#4caf72;\">KFM Office</strong><br>" +
+                '<span class="pg-contact-14">Samahni Chock, Bhimber<br>Azad Jammu &amp; Kashmir</span>',
+            )
+            .openPopup();
+
+          // Re-enable scroll zoom on click
+          map.on("click", function () {
+            map.scrollWheelZoom.enable();
+          });
+          map.on("mouseout", function () {
+            map.scrollWheelZoom.disable();
+          });
+        }
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initMap);
+        } else {
+          initMap();
+        }
+      })();
+    </script>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
