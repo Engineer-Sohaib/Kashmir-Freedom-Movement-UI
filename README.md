@@ -18,6 +18,9 @@ The site covers everything from KFM's mission and leadership to the history of K
 
 ---
 
+![Portfolio-Preview](<img alt="image" src="https://github.com/user-attachments/assets/bcf5b091-9c13-4896-8b90-05bd714c1bcb" />
+)
+
 ## Pages
 
 | Page | Description |
