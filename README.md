@@ -16,8 +16,9 @@ This is the official frontend UI for the Kashmir Freedom Movement. It's not just
 
 The site covers everything from KFM's mission and leadership to the history of Kashmir, information about its divided regions, books, a gallery, membership, donations, and contact.
 
----
 ![Website-Preview](https://i.postimg.cc/0QPbqMRQ/Kashmir-Freedom-Movement.png)
+
+---
 
 ## Pages
 
