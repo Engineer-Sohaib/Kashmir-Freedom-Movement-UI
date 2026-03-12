@@ -18,7 +18,7 @@ The site covers everything from KFM's mission and leadership to the history of K
 
 ---
 
-![Website-Preview](<img alt="image" src="https://photos.app.goo.gl/29Sh8QE9pqWdJWjw8" />
+![Website-Preview](<img alt="image" src="[https://photos.app.goo.gl/29Sh8QE9pqWdJWjw8](https://photos.fife.usercontent.google.com/pw/AP1GczNG3M1JfwJHXLFq-F_CFGE-ICFE-4FhSnnkQIeFbdZHabZTJe9GLY3k=w1324-h679-s-no-gm?authuser=0)" />
 )
 
 ## Pages
